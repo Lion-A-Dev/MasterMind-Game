@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="564.0" prefWidth="636.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projet_exemple.JeuController">
+   <children>
+      <Label layoutX="202.0" layoutY="14.0" prefHeight="54.0" prefWidth="231.0" text="MASTERMIND" textFill="#0900ffe2">
+         <font>
+            <Font name="Calibri Bold" size="36.0" />
+         </font>
+      </Label>
+      <GridPane hgap="25.0" layoutX="112.0" layoutY="81.0" prefHeight="374.0" prefWidth="237.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="56.7999755859375" minWidth="10.0" prefWidth="42.599951171875" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.33331298828125" minWidth="10.0" prefWidth="41.000048828125" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="128.0" minWidth="0.0" prefWidth="36.19996337890623" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="187.33331298828125" minWidth="10.0" prefWidth="47.40003662109376" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Circle fill="DODGERBLUE" radius="18.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="p12" fill="#c8cacc" radius="18.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" />
+            <Circle fx:id="p11" fill="#c8cacc" radius="18.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="p13" fill="#c8cacc" radius="18.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="2" />
+            <Circle fx:id="p14" fill="#c8cacc" radius="18.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="3" />
+            <Circle fx:id="p21" fill="#c8cacc" radius="18.0" stroke="BLACK" strokeType="INSIDE" GridPane.rowIndex="1" />
+            <Circle fx:id="p22" fill="#c8cacc" radius="18.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Circle fx:id="p23" fill="#c8cacc" radius="18.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Circle fx:id="p24" fill="#c8cacc" radius="18.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Circle fx:id="p31" fill="#c8cacc" radius="18.0" stroke="BLACK" strokeType="INSIDE" GridPane.rowIndex="2" />
+            <Circle fx:id="p32" fill="#c8cacc" radius="18.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Circle fx:id="p33" fill="#c8cacc" radius="18.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Circle fx:id="p34" fill="#c8cacc" radius="18.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Circle fx:id="p41" fill="#c8cacc" radius="18.0" stroke="BLACK" strokeType="INSIDE" GridPane.rowIndex="3" />
+            <Circle fx:id="p42" fill="#c8cacc" radius="18.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Circle fx:id="p43" fill="#c8cacc" radius="18.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Circle fx:id="p44" fill="#c8cacc" radius="18.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Circle fx:id="p51" fill="#c8cacc" radius="18.0" stroke="BLACK" strokeType="INSIDE" GridPane.rowIndex="4" />
+            <Circle fx:id="p52" fill="#c8cacc" radius="18.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Circle fx:id="p53" fill="#c8cacc" radius="18.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Circle fx:id="p54" fill="#c8cacc" radius="18.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Circle fx:id="p61" fill="#c8cacc" radius="18.0" stroke="BLACK" strokeType="INSIDE" GridPane.rowIndex="5" />
+            <Circle fx:id="p62" fill="#c8cacc" radius="18.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Circle fx:id="p63" fill="#c8cacc" radius="18.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Circle fx:id="p64" fill="#c8cacc" radius="18.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <Circle fx:id="p71" fill="#c8cacc" radius="18.0" stroke="BLACK" strokeType="INSIDE" GridPane.rowIndex="6" />
+            <Circle fx:id="p72" fill="#c8cacc" radius="18.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Circle fx:id="p73" fill="#c8cacc" radius="18.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            <Circle fx:id="p74" fill="#c8cacc" radius="18.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+            <Circle fx:id="p81" fill="#c8cacc" radius="18.0" stroke="BLACK" strokeType="INSIDE" GridPane.rowIndex="7" />
+            <Circle fx:id="p82" fill="#c8cacc" radius="18.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Circle fx:id="p83" fill="#c8cacc" radius="18.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+            <Circle fx:id="p84" fill="#c8cacc" radius="18.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+         </children>
+      </GridPane>
+      <Pane layoutX="399.0" layoutY="159.0" prefHeight="239.0" prefWidth="200.0" style="-fx-background-color: black;">
+         <children>
+            <Circle fx:id="c4" fill="GREEN" layoutX="66.0" layoutY="93.0" onMousePressed="#Select" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="c1" fill="RED" layoutX="139.0" layoutY="54.0" onMousePressed="#Select" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="c5" fill="ORANGE" layoutX="66.0" layoutY="158.0" onMousePressed="#Select" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="c2" fill="YELLOW" layoutX="139.0" layoutY="119.0" onMousePressed="#Select" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="c3" fill="#2817df" layoutX="144.0" layoutY="190.0" onMousePressed="#Select" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+         </children>
+      </Pane>
+      <Pane layoutX="111.0" layoutY="470.0" prefHeight="66.0" prefWidth="238.0" style="-fx-background-color: white;">
+         <children>
+            <GridPane layoutX="8.0" layoutY="-3.0" prefHeight="66.0" prefWidth="231.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="85.20001220703125" minWidth="10.0" prefWidth="63.000024414062494" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="76.39996337890625" minWidth="10.0" prefWidth="62.199975585937494" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="67.20001220703125" minWidth="10.0" prefWidth="59.00004882812499" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="75.20001220703125" minWidth="10.0" prefWidth="47.799951171874994" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Circle fx:id="r1" fill="#c8cacc" radius="18.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+                  <Circle fx:id="r2" fill="#c8cacc" radius="18.0" stroke="BLACK" strokeType="INSIDE" visible="false" GridPane.columnIndex="1" />
+                  <Circle fx:id="r3" fill="#c8cacc" radius="18.0" stroke="BLACK" strokeType="INSIDE" visible="false" GridPane.columnIndex="2" />
+                  <Circle fx:id="r4" fill="#c8cacc" radius="18.0" stroke="BLACK" strokeType="INSIDE" visible="false" GridPane.columnIndex="3" />
+               </children>
+            </GridPane>
+         </children>
+      </Pane>
+      <Label fx:id="resultatTemptative1" layoutX="14.0" layoutY="95.0" prefHeight="18.0" prefWidth="76.0" />
+      <Label fx:id="resultatTemptative2" layoutX="12.0" layoutY="141.0" prefHeight="18.0" prefWidth="88.0" />
+      <Label fx:id="resultatTemptative3" layoutX="12.0" layoutY="189.0" prefHeight="18.0" prefWidth="88.0" />
+      <Label fx:id="resultatTemptative4" layoutX="10.0" layoutY="234.0" prefHeight="18.0" prefWidth="88.0" />
+      <Label fx:id="resultatTemptative5" layoutX="12.0" layoutY="282.0" prefHeight="18.0" prefWidth="88.0" />
+      <Label fx:id="resultatTemptative6" layoutX="9.0" layoutY="329.0" prefHeight="18.0" prefWidth="88.0" />
+      <Label fx:id="resultatTemptative7" layoutX="11.0" layoutY="380.0" prefHeight="18.0" prefWidth="88.0" />
+      <Label fx:id="resultatTemptative8" layoutX="8.0" layoutY="428.0" prefHeight="18.0" prefWidth="88.0" />
+   </children>
+</AnchorPane>
